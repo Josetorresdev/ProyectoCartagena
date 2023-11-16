@@ -13,30 +13,71 @@ header {
     width: 100%;
     background-color: #F5F5F5;
     color: #333;
-    text-align: center;
+    --text-align: center;
     padding: 10px;
     z-index: 1000px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Agregué una sombra al borde inferior */
 }
 
+
 #search-bar {
-    padding: 8px;
-    margin-top: 10px;
+    background-color: #F5F5F5;
+    padding: 10px 20px;
+    margin-top: 3px;
     width: 200px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    border: 0px solid #ccc;
+    border-radius: 15px;
     font-size: 14px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    
+}
+
+.lupa{
+    background-color: transparent;
+    padding: 10px 15px;
+    position: absolute;
+    border: 0;
+    top: 15px;
+    --bottom: 0;
+    --right: 0;
+    left: 10px;
+    margin: auto;
+    border-radius: 5px 5px 5px 5px;
+    color: green;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.menu{
+    /* Estilos para el elemento i dentro de la clase menu */
+    position: absolute;
+    font-size: 18px; /* Cambia el tamaño del icono según tus necesidades */
+    color: green; /* Cambia el color del icono */
+    left: 10px;
+    padding: 10px 267px;
+    top: 15px;
+    
+}
+
+input::placeholder {
+    font-weight: bold;
+    text-align: right;
+    color: #333;
+    font-size: 11px;
+    padding: 30px;
+    --right: 40px;
 }
 
 
 header h1 {
-    margin: 0;
+    margin: 5px 10px;
     font-size: 20px;
     text-align: left;
 }
 
 header p {
-    font-size: 10px;
+    margin: 10px 10px;
+    font-size: 13px;
     text-align: left;
 }
 
@@ -56,7 +97,7 @@ header p {
 }
 
 #destacados {
-    margin-top: -35px; /* Ajusta este valor según sea necesario */
+    margin-top: px; /* Ajusta este valor según sea necesario */
     padding: 20px; /* Ajusté el relleno para que sea más uniforme */
 }
 
@@ -74,6 +115,7 @@ header p {
     width: 100%;
     max-width: 320px; /* Establece un ancho máximo para la imagen */
     height: auto;
+    max-height: 260px;
     border-radius: 10px;
     display: block; /* Elimina espacio adicional debajo de la imagen */
     margin: 0 auto; /* Centra la imagen y agrega margen lateral */
